@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wac-a-mole</title>
+  <style>
+    /* Style the grid */
+    .squares {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      margin: 20px auto;
+      width: max-content;
+    }
+
+    /* Style each square */
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: lightgrey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      border: 1px solid #000;
+    }
+
+    /* Style for the mole */
+    .mole {
+      background-color: orange; /* Choose any color for the mole */
+    }
+
+    /* Style the score and time displays */
+    .score, .time {
+      font-size: 24px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wac-a-mole</h1>
+  <h2>Score: <span class="score">0</span></h2>
+  <h2>Time: <span class="time">60</span></h2>
+
+  <div class="squares">
+    <div class="square" id="1"></div>
+    <div class="square" id="2"></div>
+    <div class="square" id="3"></div>
+    <div class="square" id="4"></div>
+    <div class="square" id="5"></div>
+    <div class="square" id="6"></div>
+    <div class="square" id="7"></div>
+    <div class="square" id="8"></div>
+    <div class="square" id="9"></div>
+  </div>
+
+  <button class="button">start game</button>
+  <button class="end-button">end  game</button>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
